@@ -1,0 +1,5 @@
+
+{
+  "name": "SecretDoor",
+  "description": "A multi-layered Capture The Flag challenge involving robots.txt discovery, ROT13 decryption, and hidden directory exploration."
+}
