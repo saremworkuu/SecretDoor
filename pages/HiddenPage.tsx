@@ -54,7 +54,7 @@ const HiddenPage: React.FC = () => {
 
         <div className="relative group overflow-hidden rounded-lg border-2 border-green-500 shadow-[0_0_30px_rgba(34,197,94,0.3)]">
           <img 
-            src="public/John the Ripper_image.png" 
+            src="/John the Ripper_image.png" 
             alt="Secret Intelligence" 
             className="w-full h-auto object-cover opacity-90 group-hover:scale-105 transition-transform duration-1000"
           />
