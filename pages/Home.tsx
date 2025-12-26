@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         </p>
       </div>
 
-      <div className="relative group">
+      <div className="relative group w-full max-w-[560px] md:max-w-[640px] mx-auto">
         <div className="absolute -inset-1 bg-green-500 rounded-lg blur opacity-10 group-hover:opacity-30 transition duration-1000 group-hover:duration-200"></div>
         <div className="relative bg-black rounded-lg p-2 border border-green-900/30">
             <img
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
               onError={(e) => {
                 e.currentTarget.src = '/robot.jpg';
               }}
-              className="rounded-md opacity-70 group-hover:opacity-90 transition-opacity grayscale hover:grayscale-0 duration-500"
+              className="w-full h-auto object-contain rounded-md opacity-70 group-hover:opacity-90 transition-opacity grayscale hover:grayscale-0 duration-500"
             />
         </div>
         <p className="mt-4 text-[10px] text-green-900 tracking-widest uppercase">
