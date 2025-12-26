@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         {children}
       </main>
       <footer className="border-t border-green-900/30 py-6 text-center text-sm text-green-800">
-        <p>© 2024 SecretDoor - Trust the Process</p>
+        <p>© 2025 SecretDoor - Trust the Process</p>
       </footer>
     </div>
   );
