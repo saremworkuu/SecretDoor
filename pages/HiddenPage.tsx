@@ -5,7 +5,7 @@ const HiddenPage: React.FC = () => {
   const handleDownload = () => {
     // In a real app, this would be a real file.
     // For this demo, we'll download a random hacker-themed image.
-    const imageUrl = "public/John the Ripper_image.png";
+    const imageUrl = "/John the Ripper_image.png";
     const link = document.createElement('a');
     link.href = imageUrl;
     link.download = 'TOP_SECRET_PAYLOAD.jpg';
