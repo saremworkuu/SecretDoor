@@ -4,15 +4,14 @@ SecretDoor is a small CTF-style web app. Your goal is to discover hidden routes 
 
 ## Puzzle Flow
 - Visit `/robots.txt` to find a disallowed path and a hint.
-- Apply ROT13 to `jnjv` → `wawi`.
-- Append `melo` to form the final route: `/wawimelo`.
-- Opening `/wawimelo` reveals the hidden page.
+- Apply ROT13 to `uvqqra` → `hidden`.
+- Opening `/hidden` reveals the hidden page.
 
 ## Routes
 - `/` Home
 - `/about` About page
 - `/robots.txt` Plaintext hints (served from `public/robots.txt`)
-- `/wawimelo` Hidden page (ACCESS GRANTED)
+- `/hidden` Hidden page (ACCESS GRANTED)
 
 ## Tech Stack
 - React + TypeScript
@@ -54,7 +53,7 @@ npm run dev
 Then open:
 - Dev server: http://localhost:3000/
 - Hints: http://localhost:3000/robots.txt
-- Target: http://localhost:3000/wawimelo
+- Target: http://localhost:3000/hidden
 
 ## Build & Preview
 ```bash

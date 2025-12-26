@@ -27,7 +27,7 @@ const Home: React.FC = () => {
             />
         </div>
         <p className="mt-4 text-[10px] text-green-900 tracking-widest uppercase">
-          Autonomous crawlers ignore the noise. They follow the map.
+          hint: Autonomous crawlers ignore the noise. They follow the map.
         </p>
       </div>
 

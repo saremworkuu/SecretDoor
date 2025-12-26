@@ -1,7 +1,8 @@
-# Wait... did you really think it would be that easy? 
+# Wait... did you really think it would be that easy?
 
 User-agent: *
-# jnjvzryb
+# uvqqra
 
-# Try turning me 13 steps around
+# hint: Try turning me 13 steps around
+
 

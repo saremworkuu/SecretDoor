@@ -19,7 +19,7 @@ const HiddenPage: React.FC = () => {
       <div className="w-full text-center mb-12">
         <h1 className="text-5xl font-black text-white mb-2 tracking-tighter italic">ACCESS GRANTED.</h1>
         <div className="h-1 w-32 bg-green-500 mx-auto"></div>
-        <p className="mt-4 text-green-400 animate-pulse">Connection established to secure node: /wawimelo</p>
+        <p className="mt-4 text-green-400 animate-pulse">Connection established to secure node: /hidden</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -45,9 +45,9 @@ const HiddenPage: React.FC = () => {
           <div className="bg-green-900/10 border border-green-900/30 p-4 rounded text-xs text-green-900">
             <h4 className="font-bold mb-2">SYSTEM LOGS:</h4>
             <div className="space-y-1">
-              <p>[09:24:12] Path resolution: /wawimelo confirmed</p>
+              <p>[09:24:12] Path resolution: /hidden confirmed</p>
               <p>[09:24:13] Identity verification: SUCCESS</p>
-              <p>The metadata often tells more than the image itself...</p>
+              <p>hint: The metadata often tells more than the image itself...</p>
             </div>
           </div>
         </div>
