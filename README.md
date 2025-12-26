@@ -1,20 +1,67 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SecretDoor
 
-# Run and deploy your AI Studio app
+SecretDoor is a small CTF-style web app. Your goal is to discover hidden routes using standard recon tactics and reach the access-granted page.
 
-This contains everything you need to run your app locally.
+## Puzzle Flow
+- Visit `/robots.txt` to find a disallowed path and a hint.
+- Apply ROT13 to `jnjv` → `wawi`.
+- Append `melo` to form the final route: `/wawimelo`.
+- Opening `/wawimelo` reveals the hidden page.
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+## Routes
+- `/` Home
+- `/about` About page
+- `/robots.txt` Plaintext hints (served from `public/robots.txt`)
+- `/wawimelo` Hidden page (ACCESS GRANTED)
 
-## Run Locally
+## Tech Stack
+- React + TypeScript
+- React Router (BrowserRouter)
+- Vite
+- Tailwind via CDN (in `index.html`)
 
-**Prerequisites:**  Node.js
+## Project Structure
+```
+App.tsx
+index.html
+index.tsx
+metadata.json
+package.json
+tsconfig.json
+vite.config.ts
+components/
+   Layout.tsx
+   Navbar.tsx
+pages/
+   About.tsx
+   HiddenPage.tsx
+   Home.tsx
+   RobotsTxt.tsx
+public/
+   robots.txt
+```
 
+## Getting Started
+Prerequisite: Node.js (LTS recommended)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Install and run the dev server:
+
+```bash
+npm install
+npm run dev
+```
+
+Then open:
+- Dev server: http://localhost:3000/
+- Hints: http://localhost:3000/robots.txt
+- Target: http://localhost:3000/wawimelo
+
+## Build & Preview
+```bash
+npm run build
+npm run preview
+```
+
+## Notes
+- Files in `public/` are served at the site root (e.g., `public/robots.txt` → `/robots.txt`).
+- The app uses `BrowserRouter`; make sure your production host serves `index.html` for unknown routes if you deploy.
